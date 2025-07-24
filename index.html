@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio - Edmar Zatarin</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      background: #0078d7;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    /* ===== SECTIONS ===== */
+    section {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      color: #0078d7;
+    }
+
+    /* ===== SKILLS GRID ===== */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .skill-card {
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .skill-card h4 {
+      margin-bottom: 8px;
+      color: #0078d7;
+      font-size: 1.1rem;
+    }
+
+    .skill-card p {
+      margin: 0;
+      color: #333;
+    }
+
+    /* ===== PROJECTS ===== */
+    .project {
+      border-bottom: 1px solid #ccc;
+      padding: 10px 0;
+    }
+
+    .project:last-child {
+      border: none;
+    }
+
+    /* ===== BUTTONS ===== */
+    .btn {
+      display: inline-block;
+      padding: 10px 15px;
+      margin-top: 5px;
+      background: #0078d7;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.2s ease-in-out;
+    }
+
+    .btn:hover {
+      background: #005fa3;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #333;
+      color: #fff;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Edmar Zatarin</h1>
+    <p>Desenvolvedor Full Stack | Angular | Ionic | React | Next.js | Nest.js | Python | C# | Node.js | PostgreSQL | SQL Server</p>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#conhecimentos">Conhecimentos</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section id="sobre">
+    <h2>Sobre Mim</h2>
+    <p>
+      Sou um desenvolvedor full stack com mais de 20 anos de experiência em análise e desenvolvimento de software,
+      atuando em projetos nacionais e internacionais para plataformas Web e Desktop.
+      Possuo sólida vivência com tecnologias Microsoft e sistemas legados, além de grande capacidade de adaptação a
+      ambientes modernos, escaláveis e orientados a boas práticas.
+    </p>
+  </section>
+
+  <section id="conhecimentos">
+    <h2>Conhecimentos</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h4>Front-end</h4>
+        <p>Angular, Ionic, React, Next.js, Asp.Net Core, Asp.Net Full, WPF</p>
+      </div>
+      <div class="skill-card">
+        <h4>Back-end</h4>
+        <p>Python, Node.js, Nest.js, .NET Core, .Net Full, C#</p>
+      </div>
+      <div class="skill-card">
+        <h4>Bancos de Dados</h4>
+        <p>SQL Server, PostgreSQL, Firebird</p>
+      </div>
+      <div class="skill-card">
+        <h4>DevOps</h4>
+        <p>Docker, Kubernetes, AWS, Git Flow, Azure</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projetos">
+    <h2>Projetos</h2>
+    <div class="project">
+      <h3>Projeto 1 - API de Produtos</h3>
+      <p>API REST em Python + FastAPI para gerenciar produtos (CRUD completo).</p>
+      <a href="#" class="btn">Ver Código</a>
+    </div>
+    <div class="project">
+      <h3>Projeto 2 - Dashboard Angular</h3>
+      <p>Interface com ngx-datatable para visualização de dados fictícios.</p>
+      <a href="#" class="btn">Ver Código</a>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Email: <a href="mailto:edzatarin@gmail.com">edzatarin@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/edzatarin/" target="_blank">linkedin.com/in/edzatarin</a></p>
+    <p>GitHub: <a href="https://github.com/edzatarin" target="_blank">github.com/edzatarin</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Seu Nome - Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
